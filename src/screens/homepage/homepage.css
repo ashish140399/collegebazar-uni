@@ -1,0 +1,15 @@
+.home{
+    background: url(../../shared/img/bg.png);
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    background-size: auto 100%;
+    background-position: center;
+    height: 80vh;
+}
+.home-content .see-more{
+    text-decoration: none;
+    background: rgb(42, 111, 216);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}

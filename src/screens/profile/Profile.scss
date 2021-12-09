@@ -1,0 +1,59 @@
+.myuser{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 50px;
+    position: relative;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .filepond--file-action-button{
+        display: none;
+    }
+    &:hover{
+        .filepond--file-action-button{
+            display: block;
+        }
+        .imgOverlay{
+            bottom: 0;
+        }
+    }
+    
+}
+
+.user-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.imgOverlay{
+    background: #D0D0D0;
+    padding: 2px 5px 4px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    bottom: -16px;
+    transition: all 0.3s ease;
+    i{
+        font-size: 10px;
+    }
+}
+
+.card-body h6{
+    font-weight: 700;
+    input{
+        &:disabled{
+            border: 0;
+        }
+        border: 1px solid #ccc;
+        padding: 4px 8px;
+        border-radius: 8px;
+        outline: 0;
+        font-weight: 500;
+        background: transparent;
+    }
+}
